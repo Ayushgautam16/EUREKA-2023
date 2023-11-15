@@ -1,0 +1,237 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.popup{
+    background-color: rgb(115, 161, 208);
+    border-image-repeat: repeat;
+    width: 900px;
+    padding: 30px 40px;
+    height: 600px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border: solid;
+    border-radius: 10px;
+    font-family: "Poppins",sans-serif;
+    display:none;
+    text-align: center;
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color:none;
+    font-size: 30px;
+    color: #060404;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+ .popup a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #fff5f5;
+    color: #0a0909;
+    text-decoration: none;
+    border: solid;
+    padding: 5px 0;
+}
+ /*assign full width inputs*/
+ input[type=text],
+ input[type=password] {
+     width: 100%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     display: inline-block;
+     border: 1px solid #ccc;
+     box-sizing: border-box;
+ }
+
+ /*set a style for the buttons*/
+ .cancelbtn button {
+     background-color: #4CAF50;
+     color: white;
+     padding: 14px 20px;
+     margin: 8px 0;
+     border: none;
+     cursor: pointer;
+     width: 100%;
+ }
+
+ /* set a hover effect for the button*/
+ button:hover {
+     opacity: 0.8;
+ }
+
+ /*set extra style for the cancel button*/
+ a .cancelbtn {
+     width: auto;
+     padding: 10px 18px;
+     background-color: #f44336;
+ }
+
+ /*centre the display image inside the container*/
+ .imgcontainer {
+     text-align: center;
+     margin: 24px 0 12px 0;
+     position: relative;
+ }
+
+ /*set image properties*/
+ img.avatar {
+     width: 40%;
+     border-radius: 50%;
+ }
+
+ /*set padding to the container*/
+ .container {
+     padding: 16px;
+ }
+  
+ /*set the forgot password text*/
+ span.psw {
+     float: right;
+     padding-top: 16px;
+ }
+
+ /*set the Modal background*/
+ .modal {
+     display: none;
+     position: fixed;
+     z-index: 1;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     overflow: auto;
+     background-color: rgb(0, 0, 0);
+     background-color: rgba(0, 0, 0, 0.4);
+     padding-top: 60px;
+ }
+
+ /*style the model content box*/
+ .modal-content {
+     background-color: #fefefe;
+     margin: 5% auto 15% auto;
+     border: 1px solid #888;
+     width: 80%;
+ }
+
+ /*style the close button*/
+ .close {
+     position: absolute;
+     right: 25px;
+     top: 0;
+     color: #000;
+     font-size: 35px;
+     font-weight: bold;
+ }
+  
+ .close:hover,
+ .close:focus {
+     color: red;
+     cursor: pointer;
+ }
+
+ /* add zoom animation*/
+ .animate {
+     -webkit-animation: animatezoom 0.6s;
+     animation: animatezoom 0.6s
+ }
+  
+ @-webkit-keyframes animatezoom {
+     from {
+         -webkit-transform: scale(0)
+     }
+     to {
+         -webkit-transform: scale(1)
+     }
+ }
+  
+ @keyframes animatezoom {
+     from {
+         transform: scale(0)
+     }
+     to {
+         transform: scale(1)
+     }
+ }
+  
+ @media screen and (max-width: 300px) {
+     span.psw {
+         display: block;
+         float: none;
+     }
+     .cancelbtn {
+         width: 100%;
+     }
+ }
+ /* ------- upload image------
+  */
+
+
+  #drop-area{
+    width: 350px;
+    height: 300px;
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(#e7baff,#c2b6d9);
+    /* background-color: aqua; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#img-view{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    border: 2px dashed #bbb5ff;
+    background-color: #f7f8ff;
+    background-position: center;
+    background-size: cover;
+    /* padding-top: 10px; */
+    object-fit: fill;
+    box-sizing: content-box;
+  /* display: block;
+  margin: auto;
+     */
+    }
+    #upload{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+ 
+#img-view img{
+    width: 100%;height: 300px;
+    object-fit: cover;
+    padding-top: 10p;
+}
+/* #img-view span{
+    display: block;
+    font-size: 12px;
+    color: #777;
+    margin-top: 15px;
+} */
+#previewImage{
+   max-width:100%; 
+    height: 100%;
+ object-fit: cover;
+}
